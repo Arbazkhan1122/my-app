@@ -1,0 +1,50 @@
+       .heading1{
+            font-size: 45px;
+            
+            margin-top: 100px;
+        }
+        .heading1 h2{
+              color: black;
+        }
+        .heading1 h1{
+        color:red;
+        }
+        .logoImage img{
+            max-width: 200px;
+            padding: 20px;
+        }
+        
+        .paraOfLogo{
+            padding: 10px;
+            max-width: 60%;
+            width: 60%;
+            
+        }
+        .super-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .mainSection{
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .section-container {
+            /* border: 1px solid black; */
+            border-radius: 20px;
+           max-width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.9) 0px 30px 60px -30px;
+        }
+        .paraOfLogo p{
+            font-size: 1vw;
+        }

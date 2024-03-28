@@ -1,0 +1,78 @@
+.footer-main{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 50px;
+      background: url("./Images/cool-background1.png") ; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: black;
+      margin: auto;
+      overflow: hidden;
+}
+.log img{
+ width: 80px;
+}
+/* .log{
+      margin-bottom: 90px;
+} */
+.sub h6{
+      font-size: 20px;
+}
+.sub i{
+      font-size: 30px;
+}
+.sub span{
+      font-size: 25px;
+      padding: 10px;
+}
+/* .sub{
+      margin-top: 100px;
+} */
+li{
+      list-style: none;
+      padding: 10px;
+      font-size: 20px;
+      
+}
+.company1{
+      padding: 20px;
+      margin-left: 40px;
+      width: 25%;
+     /* margin-bottom: 50px; */
+}
+.footer-logo{
+      /* margin-bottom: 100px; */
+      width: 30% !important;
+}
+.company2{
+       padding: 20px;
+      /* margin-bottom: 50px; */
+}
+.contact{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 20px;
+      margin: 20px;
+      width: 40%;
+}
+.contact i{
+      font-size: 30px;
+      padding: 10px;
+     
+}
+.contact span{
+      font-size: 20px;
+}
+.social{
+      /* margin-top: 40px; */
+}
+.brand{
+
+      width: 25%;
+}

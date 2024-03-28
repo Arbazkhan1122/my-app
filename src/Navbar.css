@@ -1,0 +1,180 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li Link{
+text-decoration: none;
+color: black;
+}
+
+.a:hover ~ .cursore{
+  transform: scale(5);
+}
+a{
+text-decoration: none;
+color: black;
+}
+#submenu{
+  
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  visibility: hidden;
+  z-index: 100000;
+  background-color: white;
+  
+  transition: all .4s ease-in-out;
+}
+#submenu li{
+  font-size: 25px;
+  text-align: center;
+}
+li:hover ul#submenu{
+  opacity: 1;
+  top: 80px;
+  visibility: visible;
+}
+
+#submenu1{
+  
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  visibility: hidden;
+  z-index: 100000;
+  background-color: white;
+  
+  transition: all .4s ease-in-out;
+}
+#submenu1 li{
+  font-size: 25px;
+  text-align: center;
+}
+li:hover ul#submenu1{
+  opacity: 1;
+  top: 80px;
+  visibility: visible;
+ 
+}
+#submenu2{
+  
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  visibility: hidden;
+  z-index: 100000;
+  background-color: white;
+  
+  transition: all .4s ease-in-out;
+}
+#submenu2 li{
+  
+  font-size: 25px;
+  text-align: center;
+}
+li:hover ul#submenu2{
+  opacity: 1;
+  top: 80px;
+  visibility: visible;
+}
+.main-nav {
+  width: 100%;
+  max-height: 100px !important;
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+  z-index: 100000;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+
+  position: fixed;
+  top: 0;
+  background-color: white;
+  font-family: "Jost", "Helvet";
+  animation: animation 0.6s;
+  backdrop-filter: blur(50px);
+}
+@keyframes animation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.logo img {
+  width: 70px;
+  height: 80px;
+  margin-left: 10px;
+  margin-bottom: 13px;
+
+}
+
+.logo span {
+  color: #C40B0B;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 20%;
+}
+.logo p {
+  font-size: 15px;
+  line-height: 0px;
+}
+
+.menu-link img {
+  width: 30px;
+}
+.menu-link ul li {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+.menu-link ul li a:hover {
+  border-bottom: 1px solid #000;
+  transform: scale(0.9);
+}
+.navbar-collapse{
+  background-color: white;
+  /* margin-top: 30px; */
+   
+}
+
+
+/* Add the following CSS for small screens (mobile) */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: white;
+    margin-top: 30px; 
+  }
+
+  .nav-sub-menu-links {
+    flex-direction: column; 
+  }
+
+  .menu-link ul li {
+    margin-bottom: 10px;
+  }
+
+  #submenu,
+  #submenu1,
+  #submenu2 {
+    top: 0;
+    right: 10;
+  }
+}
+
+
+

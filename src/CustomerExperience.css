@@ -1,0 +1,108 @@
+
+
+.customer-tagLine {
+  max-width: 100%;
+  max-height: fit-content;
+  margin: auto;
+  padding: 30px;
+  line-height: 10px;
+}
+.card1 {
+  border: 1px solid black;
+  width: 30rem;
+  max-width: 60rem !important;
+  max-height: 100% !important;
+}
+.customer-tagLine{
+  margin: auto !important;
+}
+.card1 h3{
+  text-align: center;
+  color: #FD0000;
+}
+.customer-tagLine h3 {
+  color: #FD0000;
+  font-size: 3rem;
+  text-align: center;
+}
+.customer-tagLine h1 {
+  font-size: 2rem;
+  text-align-last: center;
+}
+.container {
+  max-width: 40%;
+  height: 800px;
+  max-height:100% !important;
+  border: 1px solid white;
+  padding: 30px;
+  gap: 10px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid red;
+}
+.container:hover {
+  
+  transform: scale(1.1);
+ 
+}
+
+.customer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+/* text-align: justify; */
+  padding: 50px;
+}
+.container h3 {
+  padding: 10px;
+}
+.container p {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+
+
+.container img {
+  width: 100px;
+  margin: auto;
+  display: flex;
+  
+  
+}
+.container h5 {
+  margin-top: 100px;
+}
+.body2 {
+  padding: 10px;
+  /* background: url("./Images/cool-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+/* Add these styles at the end of your existing CSS file */
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .body2 {
+    padding: 20px; /* Add some padding for better mobile view */
+  }
+  .customer-tagLine h3,
+  .customer-tagLine h1 {
+    font-size: 1.5rem;
+  }
+  .container,
+  .card1 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 1200px) {
+  .customer-content {
+    padding: 40px; /* Adjust padding for larger screens */
+  }
+}

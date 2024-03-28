@@ -1,0 +1,69 @@
+.newTeamDiv1 {
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  max-width: 100%px !important;
+ 
+}
+
+.newteamManDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+}
+
+.newTeamSubDiv {
+ border:2px solid white;
+  margin: 20px;
+  padding: 30px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+   box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.newTeamImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.newTeamheadingdiv {
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  text-align: justify;
+}
+
+.newTeamHeading1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  max-width: 400px;
+  text-align: justify;
+}
+
+.newTeamSubDiv p {
+  max-width: 800px;
+  text-align: justify;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .newTeamDiv1,
+  .newteamManDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}

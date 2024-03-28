@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.card {
+  width: 18rem !important;
+  
+}
+.company-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+  opacity: 0.1;
+}
+.company-img img{
+  backface-visibility: hidden;
+  backdrop-filter:  blur(100px);
+  backdrop-filter: garayScale(10);
+}
+.trusted-brand {
+  max-width: 100% !important;
+  max-height: 100% !important;
+ 
+  /* background: url("./Images/cool-background.png") no-repeat center / cover; */
+ font-family: "Jost", "Helvet";
+}
+.trusted-brand h1 {
+  text-align: center;
+  font-size: 60px;
+  /* color: rgb(221, 33, 33); */
+  color: red;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+/* Add these styles at the end of your existing CSS file */
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .company-img {
+    padding: 10px;
+    justify-content: center;
+  }
+  .card {
+    width: 80vw !important;
+    margin-bottom: 10px;
+  }
+  .trusted-brand h1 {
+    font-size: 24px;
+  }
+}
+.trust-card{
+  filter: blur(30px);
+}
+.text-trust-heading{
+  position: relative;
+  top: 180px;
+  z-index: 5;
+}
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 1200px) {
+  .company-img {
+    padding: 30px;
+  }
+  .card {
+    width: 18rem !important;
+  }
+  .trusted-brand h1 {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,202 @@
+/* .carousel-inner {
+  max-width: 100%;
+  max-height: 100% !important;
+} */
+/* video {
+  width: 50% !important;
+  height: 100% !important;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 430px;
+  
+  
+} */
+/* .video {
+  background-color: rgb(224, 227, 233);
+} */
+.main-box {
+  animation: animation 0.6s;
+}
+@keyframes animation {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.main-box {
+  margin-top: 200px;
+ height: 100vh;
+ max-width: 100%;
+   /* background: url("./Images/cool-background.png") ; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; */
+      /* background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./Images/cover1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+      margin: auto;
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+ 
+}
+.logo-content {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; */
+  max-width: 100% !important;
+  margin: auto;
+  height: 20rem;
+  /* margin-top: 20%; */
+  
+}
+.logo-content img{
+  width: 20vw;
+  margin: auto;
+  align-self: center;
+  
+
+}
+.logoTyping{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 300px;
+  
+ 
+}
+.logo-content h3{
+  font-size: 2vw;
+  text-align: center;
+}
+.logoTyping h3{
+   font-size: 10vw;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.logo1 img {
+  width: 250px;
+  height:auto;
+  /* margin-left: 10px; */
+  margin-bottom: 100px;
+
+}
+.logo1 span {
+  color: rgb(221, 33, 33);
+  font-size: 2vw;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 100%;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 300px;
+   /* background:url("./Images/cool-background.png") no-repeat center;
+  background-size: cover;  */
+
+ 
+  
+}
+.logo1:hover{
+  transform:rotate(360 deg);
+}
+.logo1 p {
+  font-size: 30px;
+  line-height: 0px;
+}
+.logo1 h3{
+  font-size: 6vw;
+}
+
+/* Add these media queries at the end of your existing CSS file */
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+  .logo-content h3 {
+    font-size: 1vw;
+  }
+  .logoTyping h3 {
+    font-size: 2vw;
+  }
+}
+
+/* Adjust margins and paddings for smaller screens */
+@media (max-width: 576px) {
+  .main-box {
+    margin-top: 100px;
+  }
+  .logoTyping {
+    margin-top: 150px;
+  }
+  .logo-content img {
+    width: 20vw;
+  }
+}
+
+.name{
+  width:50%;
+  background-color: white;
+  height: 70px;
+  margin: auto;
+}
+.text{
+  padding: 20px;
+  margin: auto !important;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#fff);
+  box-shadow: 0 0 5px #fff,0 0 15px #fff,0 0 25px #fff,0 0 100px #fff;
+}
+.container-header{
+  text-align: center;
+ margin: auto !important;
+
+ width: 100%;
+}
+.container-header h1{
+  font-size: 5vw;
+  font-weight: 700;
+  padding: 50px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: white;
+  position: relative;
+  animation: text 5s 1;
+}
+.container-header h3{
+  font-size: 6vw;
+  font-weight: 700;
+  color: #C40B0B;
+}
+
+@keyframes text {
+  0%{
+    color: white;
+    margin-bottom:-110px ;
+  }
+  30%{
+    letter-spacing: 50px;
+    margin-bottom: -110px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -110px;
+  }
+  
+  
+}

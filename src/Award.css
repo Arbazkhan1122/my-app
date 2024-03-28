@@ -1,0 +1,235 @@
+* {
+        margin: 0;
+        padding: 0;
+        font-family: Inter, sans-serif;
+      }
+      
+      .AwardHeading {
+        color: orangered;
+        margin-top: 20px;
+      }
+      
+      .AwardHeading2 {
+        font-size: 45px;
+        color: rgb(83, 83, 139);
+       
+      }
+      
+      .AwardHeadingTag {
+        margin-bottom: 20px;
+        margin-top: 50px;
+        margin: 20px;
+      }
+      
+      .AwardfirstDiv {
+        width: 100%;
+        height: 170px;
+        background-color: whitesmoke;
+        margin-top: 100px;
+      }
+      
+      .AwardWrapper {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 27px;
+        min-height: 100vh;
+        background: whitesmoke;
+        flex-wrap: wrap;
+      }
+      
+      .AwardCard {
+        width: 350px;
+        height: 450px;
+        background: #000;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        position: relative; /* Add this line */
+      }
+      
+      .AwardPoster {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      .AwardPoster::before {
+        content: "";
+        position: absolute;
+        bottom: -45%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: 0.3s;
+      }
+      
+      .AwardCard:hover .AwardPoster::before {
+        bottom: 0;
+      }
+      
+      .AwardPoster img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 70%;
+        padding-left: 40px;
+        padding-top: 30px;
+        object-fit: cover;
+        transition: 0.3s;
+      }
+      
+      .AwardCard:hover .AwardPoster img {
+        transform: scale(1.1);
+      }
+      
+      .AwardDetails {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5em 1.5em 1em;
+        background: #000a;
+        backdrop-filter: blur(16px) saturate(120%);
+        transition: 0.3s;
+        color: #fff;
+        z-index: 2;
+      }
+      
+      .AwardCard:hover .AwardDetails {
+        bottom: 0;
+      }
+      
+      .AwardDetails h1 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      
+      .AwardDetails .AwardDesc {
+        color: #fff;
+        opacity: 0.8;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        margin: 20px;
+      }
+      .AwardDesc {
+        margin: 30px;
+      }
+      
+      .AwardBtn {
+        background-color: orangered;
+        color: white;
+        height: 43px;
+        width: 120px;
+        border: 1px solid black;
+        font-size: 17px;
+      }
+      
+      .AwardBtn:hover {
+        background-color: darkorange;
+      }
+      
+      .AwardsecondDiv {
+        width: 100%;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      
+      .AwardPhotoDiv {
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .AwardImg {
+        height: 280px;
+        width: 230px;
+        box-shadow: 0px 5px 15px black;
+        transition: transform 0.3s ease;
+      }
+      .AwardImg:hover{
+          transform: scale(1.1);
+      }
+      
+      .AwardInfoDiv {
+        background-color: rgb(52, 52, 124);
+        box-shadow: 0px 5px 15px red;
+        color: white;
+        height: 370px;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        transition: transform 0.3s ease;
+      }
+      
+      .AwardInfoDiv:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 5px 15px green;
+       
+      }
+      
+      .AwardsecondSubDiv {
+        width: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .AwardCard {
+          width: 300px;
+          height: 400px;
+        }
+      
+        .AwardsecondSubDiv {
+          flex-direction: column;
+          width: auto;
+        }
+      
+        .AwardWrapper {
+          padding: 10px;
+        }
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .AwardCard {
+          width: 250px;
+          height: 350px;
+        }
+      
+        .AwardWrapper {
+          padding: 10px;
+        }
+      
+        .AwardsecondDiv {
+          justify-content: center;
+        }
+      
+        .AwardPhotoDiv {
+          width: 200px;
+          margin: 10px 0;
+        }
+      
+        .AwardInfoDiv {
+          width: 90%;
+        }
+      }
